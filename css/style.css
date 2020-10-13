@@ -1,0 +1,102 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: url(../img/river.jpg);
+    font-family: sans-serif;
+}
+#modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.411);
+    padding: 70px;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+}
+#modal h1{
+    letter-spacing: 2px;
+    color: white;
+}
+#open {
+    padding: 8px;
+    font-size: 1.1rem;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+    border: none;
+    background:transparent;
+    border: 1px solid white;
+    color: rgb(245, 245, 245);
+    border-radius: 5px;
+    font-family: calibri;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+#open:hover {
+    background: rgb(43, 43, 42);
+    border: 1px solid rgb(197, 97, 3);;
+}
+#modalOpen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    padding: 90px;
+    width: 320px;
+    background: rgb(27, 27, 27);
+    z-index: 10;
+    border-radius: 10px;
+}
+#modalOpen h2{
+    font-size: 2rem;
+    color: white;
+}
+#close {
+    position: relative;
+    top: -80px;
+    left: 220px;
+    padding: 8px;
+    font-family: cursive ;
+    line-height: 1vh;
+    background: rgb(43, 43, 42);
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+@media (max-width: 570px) {
+    #modal {
+        line-height: 12vh;
+        padding: 1px;
+    }
+    #modal h1 {
+        font-size: 1.5rem;
+    }
+    #open {
+        position: relative;
+        top: 10px;
+        padding: 5px;
+    }
+    #modalOpen {
+        line-height: 14vh;
+        padding: 3px;
+    }
+    #modalOpen h2{
+        position: relative;
+        top: -50px;
+    }
+    #close {
+        top: -35px;
+        left: 140px;
+    }
+}
